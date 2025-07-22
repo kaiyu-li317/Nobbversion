@@ -1,0 +1,18 @@
+.bug-card-fields {
+  margin-bottom: 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background: #fafbfc;
+}
+.bug-card-fields .panel-heading {
+  font-weight: bold;
+  background: #f5f5f5;
+  border-bottom: 1px solid #e0e0e0;
+  border-radius: 8px 8px 0 0;
+}
+.bug-card-fields .panel-body {
+  padding: 12px 16px;
+}
+.bug-card-fields .form-group {
+  margin-bottom: 10px;
+} 

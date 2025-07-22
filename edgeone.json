@@ -1,0 +1,7 @@
+{
+  "buildCommand": "npm install && npm run build",
+  "outputDir": ".",
+  "startCommand": "node app.js",
+  "framework": "custom",
+  "nodeVersion": "18"
+} 

@@ -1,0 +1,17 @@
+{
+  "id": "nodebb-plugin-bug-cards",
+  "name": "Bug Cards",
+  "description": "一个用于记录、竞猜和展示奇葩Bug故事的NodeBB插件。",
+  "url": "https://github.com/yourname/nodebb-plugin-bug-cards",
+  "library": "library.js",
+  "hooks": [
+    { "hook": "static:app.load", "method": "init" },
+    { "hook": "filter:post.create", "method": "onPostCreate" }
+  ],
+  "staticDirs": {
+    "public": "public"
+  },
+  "languages": "public/language",
+  "scripts": ["public/client.js"],
+  "acpScripts": ["public/admin.js"]
+} 

@@ -1,0 +1,20 @@
+2025-07-22T13:36:37.955Z [70704] - [32minfo[39m: Launching web installer on port 4567
+2025-07-22T13:36:38.234Z [70704] - [31merror[39m: Error: ENOENT: no such file or directory, copyfile '/Users/likaiyu/Desktop/NodeBB-master/node_modules/bootstrap/dist/css/bootstrap.min.css' -> '/Users/likaiyu/Desktop/NodeBB-master/public/bootstrap.min.css'
+    at async Object.copyFile (node:internal/fs/promises:622:10)
+    at async copyCSS (/Users/likaiyu/Desktop/NodeBB-master/install/web.js:308:2)
+    at async Promise.all (index 3)
+    at async web.install (/Users/likaiyu/Desktop/NodeBB-master/install/web.js:88:3)
+2025-07-22T15:09:15.891Z [76193] - [32minfo[39m: Launching web installer on port 4567
+2025-07-22T15:09:19.134Z [76193] - [32minfo[39m: Web installer listening on http://0.0.0.0:4567
+2025-07-22T15:10:38.643Z [76454] - [32minfo[39m: Launching web installer on port 4567
+2025-07-22T15:10:40.000Z [76454] - [31merror[39m: uncaughtException: listen EADDRINUSE: address already in use :::4567
+Error: listen EADDRINUSE: address already in use :::4567
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at app.listen (/Users/likaiyu/Desktop/NodeBB-master/node_modules/express/lib/application.js:635:24)
+    at launchExpress (/Users/likaiyu/Desktop/NodeBB-master/install/web.js:111:15)
+    at web.install (/Users/likaiyu/Desktop/NodeBB-master/install/web.js:96:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {"date":"Tue Jul 22 2025 08:10:39 GMT-0700 (Pacific Daylight Time)","error":{"address":"::","code":"EADDRINUSE","errno":-48,"port":4567,"syscall":"listen"},"exception":true,"os":{"loadavg":[5.4521484375,9.01171875,11.03271484375],"uptime":3898802},"process":{"argv":["/opt/homebrew/Cellar/node/24.4.1/bin/node","/Users/likaiyu/Desktop/NodeBB-master/app.js"],"cwd":"/Users/likaiyu/Desktop/NodeBB-master","execPath":"/opt/homebrew/Cellar/node/24.4.1/bin/node","gid":20,"memoryUsage":{"arrayBuffers":1453008,"external":5202841,"heapTotal":209092608,"heapUsed":113177472,"rss":375717888},"pid":76454,"uid":501,"version":"v24.4.1"},"stack":"Error: listen EADDRINUSE: address already in use :::4567\n    at Server.setupListenHandle [as _listen2] (node:net:1940:16)\n    at listenInCluster (node:net:1997:12)\n    at Server.listen (node:net:2102:7)\n    at app.listen (/Users/likaiyu/Desktop/NodeBB-master/node_modules/express/lib/application.js:635:24)\n    at launchExpress (/Users/likaiyu/Desktop/NodeBB-master/install/web.js:111:15)\n    at web.install (/Users/likaiyu/Desktop/NodeBB-master/install/web.js:96:3)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","trace":[{"column":16,"file":"node:net","function":"Server.setupListenHandle [as _listen2]","line":1940,"method":"setupListenHandle [as _listen2]","native":false},{"column":12,"file":"node:net","function":"listenInCluster","line":1997,"method":null,"native":false},{"column":7,"file":"node:net","function":"Server.listen","line":2102,"method":"listen","native":false},{"column":24,"file":"/Users/likaiyu/Desktop/NodeBB-master/node_modules/express/lib/application.js","function":"app.listen","line":635,"method":"listen","native":false},{"column":15,"file":"/Users/likaiyu/Desktop/NodeBB-master/install/web.js","function":"launchExpress","line":111,"method":null,"native":false},{"column":3,"file":"/Users/likaiyu/Desktop/NodeBB-master/install/web.js","function":"web.install","line":96,"method":"install","native":false},{"column":5,"file":"node:internal/process/task_queues","function":"process.processTicksAndRejections","line":105,"method":"processTicksAndRejections","native":false}]}
+2025-07-22T15:13:33.139Z [77507] - [32minfo[39m: Launching web installer on port 4567
+2025-07-22T15:13:35.199Z [77507] - [32minfo[39m: Web installer listening on http://0.0.0.0:4567
